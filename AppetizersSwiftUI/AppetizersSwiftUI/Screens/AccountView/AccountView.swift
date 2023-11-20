@@ -34,7 +34,8 @@ struct AccountView: View {
                         }
                         .submitLabel(.next)
 
-                    TextField("Email", text: $viewModel.user.email)                        .focused($focusedTextField, equals: .email)
+                    TextField("Email", text: $viewModel.user.email)                        
+                        .focused($focusedTextField, equals: .email)
                         .onSubmit {
                             focusedTextField = nil
                         }

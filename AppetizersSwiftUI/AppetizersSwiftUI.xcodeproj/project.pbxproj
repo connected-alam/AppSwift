@@ -14,13 +14,14 @@
 		6736154D28EB23C900C3D7FC /* AppetizersSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736154C28EB23C900C3D7FC /* AppetizersSwiftUITests.swift */; };
 		6736155728EB23C900C3D7FC /* AppetizersSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736155628EB23C900C3D7FC /* AppetizersSwiftUIUITests.swift */; };
 		6736155928EB23C900C3D7FC /* AppetizersSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736155828EB23C900C3D7FC /* AppetizersSwiftUIUITestsLaunchTests.swift */; };
+		67498D3A2B0BEC6D0078B17F /* AccountViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67498D392B0BEC6D0078B17F /* AccountViewSnapshotTests.swift */; };
+		67498D3E2B0BF56F0078B17F /* APButtonSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67498D3D2B0BF56F0078B17F /* APButtonSnapshotTests.swift */; };
 		67790B472B0A841D003DD9A9 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B462B0A841D003DD9A9 /* XDismissButton.swift */; };
 		67790B492B0A8450003DD9A9 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B482B0A8450003DD9A9 /* APButton.swift */; };
 		67790B4C2B0A8671003DD9A9 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 67790B4B2B0A8671003DD9A9 /* InlineSnapshotTesting */; };
 		67790B4E2B0A8671003DD9A9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 67790B4D2B0A8671003DD9A9 /* SnapshotTesting */; };
-		67790B512B0A8733003DD9A9 /* XDismissButtonSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B502B0A8733003DD9A9 /* XDismissButtonSnapshotTests.swift */; };
-		67790B532B0A880C003DD9A9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B522B0A880C003DD9A9 /* Button.swift */; };
-		67790B552B0A882C003DD9A9 /* ButtonSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B542B0A882C003DD9A9 /* ButtonSnapshotTests.swift */; };
+		67790B532B0A880C003DD9A9 /* NewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B522B0A880C003DD9A9 /* NewButton.swift */; };
+		67790B552B0A882C003DD9A9 /* NewButtonSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B542B0A882C003DD9A9 /* NewButtonSnapshotTests.swift */; };
 		67790B582B0B3F73003DD9A9 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B572B0B3F73003DD9A9 /* SnapshotTestCase.swift */; };
 		6795D6A128EDFD9100EE7912 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6795D6A028EDFD9100EE7912 /* AppetizerListView.swift */; };
 		6795D6A328EDFD9900EE7912 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6795D6A228EDFD9900EE7912 /* OrderView.swift */; };
@@ -70,11 +71,12 @@
 		6736155228EB23C900C3D7FC /* AppetizersSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppetizersSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6736155628EB23C900C3D7FC /* AppetizersSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersSwiftUIUITests.swift; sourceTree = "<group>"; };
 		6736155828EB23C900C3D7FC /* AppetizersSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67498D392B0BEC6D0078B17F /* AccountViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewSnapshotTests.swift; sourceTree = "<group>"; };
+		67498D3D2B0BF56F0078B17F /* APButtonSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButtonSnapshotTests.swift; sourceTree = "<group>"; };
 		67790B462B0A841D003DD9A9 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		67790B482B0A8450003DD9A9 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
-		67790B502B0A8733003DD9A9 /* XDismissButtonSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButtonSnapshotTests.swift; sourceTree = "<group>"; };
-		67790B522B0A880C003DD9A9 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		67790B542B0A882C003DD9A9 /* ButtonSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSnapshotTests.swift; sourceTree = "<group>"; };
+		67790B522B0A880C003DD9A9 /* NewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButton.swift; sourceTree = "<group>"; };
+		67790B542B0A882C003DD9A9 /* NewButtonSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButtonSnapshotTests.swift; sourceTree = "<group>"; };
 		67790B572B0B3F73003DD9A9 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
 		6795D6A028EDFD9100EE7912 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		6795D6A228EDFD9900EE7912 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
@@ -184,11 +186,28 @@
 			path = AppetizersSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		67498D3B2B0BF5500078B17F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				67790B542B0A882C003DD9A9 /* NewButtonSnapshotTests.swift */,
+				67498D3D2B0BF56F0078B17F /* APButtonSnapshotTests.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		67498D3C2B0BF55E0078B17F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67498D392B0BEC6D0078B17F /* AccountViewSnapshotTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		67790B4F2B0A870C003DD9A9 /* Snapshots */ = {
 			isa = PBXGroup;
 			children = (
-				67790B502B0A8733003DD9A9 /* XDismissButtonSnapshotTests.swift */,
-				67790B542B0A882C003DD9A9 /* ButtonSnapshotTests.swift */,
+				67498D3C2B0BF55E0078B17F /* Views */,
+				67498D3B2B0BF5500078B17F /* Buttons */,
 			);
 			path = Snapshots;
 			sourceTree = "<group>";
@@ -334,7 +353,7 @@
 			children = (
 				67790B462B0A841D003DD9A9 /* XDismissButton.swift */,
 				67790B482B0A8450003DD9A9 /* APButton.swift */,
-				67790B522B0A880C003DD9A9 /* Button.swift */,
+				67790B522B0A880C003DD9A9 /* NewButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -477,7 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A3755C29086FED00A2C06B /* Appetizer.swift in Sources */,
-				67790B532B0A880C003DD9A9 /* Button.swift in Sources */,
+				67790B532B0A880C003DD9A9 /* NewButton.swift in Sources */,
 				67C57C022A1EA83C00A211D1 /* APError.swift in Sources */,
 				67C57C272A213C0400A211D1 /* String+Extension.swift in Sources */,
 				67A3755E2908751F00A2C06B /* AppetizerListCell.swift in Sources */,
@@ -508,8 +527,9 @@
 			files = (
 				6736154D28EB23C900C3D7FC /* AppetizersSwiftUITests.swift in Sources */,
 				67790B582B0B3F73003DD9A9 /* SnapshotTestCase.swift in Sources */,
-				67790B552B0A882C003DD9A9 /* ButtonSnapshotTests.swift in Sources */,
-				67790B512B0A8733003DD9A9 /* XDismissButtonSnapshotTests.swift in Sources */,
+				67790B552B0A882C003DD9A9 /* NewButtonSnapshotTests.swift in Sources */,
+				67498D3A2B0BEC6D0078B17F /* AccountViewSnapshotTests.swift in Sources */,
+				67498D3E2B0BF56F0078B17F /* APButtonSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
