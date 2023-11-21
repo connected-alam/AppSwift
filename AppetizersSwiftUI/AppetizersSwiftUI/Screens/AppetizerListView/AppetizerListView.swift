@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PreviewSnapshots
 
 struct AppetizerListView: View {
 
@@ -47,6 +48,32 @@ struct AppetizerListView: View {
 
 struct AppetizerListView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerListView()
+        snapshots.previews
+    }
+
+    static var snapshots: PreviewSnapshots<State> {
+        PreviewSnapshots(
+            states: [
+                .init(
+                    name: "Loading State",
+                    viewModel: AppetizerListViewModel.makeViewModel(isLoading: true, isShowingDetail: false)
+                 ),
+                .init(
+                    name: "Loaded State",
+                    viewModel: AppetizerListViewModel.makeViewModel(isLoading: false, isShowingDetail: false)
+                ),
+                .init(
+                    name: "App Detail State",
+                    viewModel: AppetizerListViewModel.makeViewModel(isLoading: false, isShowingDetail: true)
+                )
+            ]
+        ) { state in
+            return AppetizerListView(viewModel: state.viewModel)
+        }
+    }
+
+    struct State: NamedPreviewState {
+        var name: String
+        var viewModel: AppetizerListViewModel
     }
 }

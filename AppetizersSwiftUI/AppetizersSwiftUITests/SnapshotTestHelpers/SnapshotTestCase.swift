@@ -10,6 +10,7 @@ import Foundation
 import SnapshotTesting
 import SwiftUI
 import XCTest
+import PreviewSnapshots
 
 private extension String {
     static let iPhone13Mini = "iPhone13Mini"
@@ -78,6 +79,33 @@ open class SnapshotTestCase: XCTestCase {
         ]
     }
 
+    public var anyDeviceStrategy: [(Snapshotting<AnyView, UIImage>, FilenameExtension)] {
+        [
+            (
+                .image(
+                    layout: .device(config: .iPhone13Mini),
+                    traits: .init(userInterfaceStyle: .light)
+                ),
+                .iPhone13Mini
+            ),
+            (
+                .image(
+                    layout: .device(config: .iPhoneSe),
+                    traits: .init(userInterfaceStyle: .dark)
+                ),
+                .iPhoneSe
+            ),
+            (
+                .image(
+                    layout: .device(config: .iPhone13ProMax),
+                    traits: .init(userInterfaceStyle: .light)
+                ),
+                .iPhone13ProMax
+            )
+
+        ]
+    }
+
     public func assertSnapshot<Value, Format>(
         matching value: Value,
         as snapshotting: SnapshotTesting.Snapshotting<Value,Format>,
@@ -118,6 +146,47 @@ open class SnapshotTestCase: XCTestCase {
                 file: file,
                 testName: testName,
                 line: line
+            )
+        }
+    }
+
+    func assertPreviewSnapshots<State>(
+        _ previewSnapshots: PreviewSnapshots<State>,
+        as snapshotting: Snapshotting<AnyView, UIImage>,
+        named name: String? = nil,
+        record recording: Bool = false,
+        testName: String = #function
+    ) {
+        for configuration in previewSnapshots.configurations {
+            var fullName = configuration.name
+            if let name {
+                fullName.append(".\(name)")
+            }
+
+            assertSnapshot(
+                matching: previewSnapshots.configure(configuration.state),
+                as: snapshotting,
+                named: fullName,
+                record: recording,
+                testName: testName
+            )
+        }
+    }
+
+
+    public func assertPreviewSnapshots<State>(
+        _ previewSnapshots: PreviewSnapshots<State>,
+        as stategy: [(SnapshotTesting.Snapshotting<AnyView, UIImage>, FilenameExtension)],
+        record recording: Bool = false,
+        testName: String = #function
+    ) {
+        stategy.forEach { snapshotting, filename in
+            assertPreviewSnapshots(
+                previewSnapshots,
+                as: snapshotting,
+                named: filename,
+                record: recording,
+                testName: testName
             )
         }
     }
