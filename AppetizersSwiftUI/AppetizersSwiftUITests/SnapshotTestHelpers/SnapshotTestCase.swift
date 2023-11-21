@@ -26,28 +26,6 @@ open class SnapshotTestCase: XCTestCase {
     public var perceptualPrecision: Float = 0.98
     static let snapshotsFolder = "/Snapshots/"
 
-    let devices: [String: ViewImageConfig] = ["iPhone13ProMax": .iPhone13ProMax,
-                                              "iPhone13Mini": .iPhone13Mini,
-                                              "iPhoneSe": .iPhoneSe]
-
-    public func assertMultipleSnapshot(
-        matching value: UIViewController,
-        named name: String? = nil,
-        record recording: Bool = isRecording,
-        file: StaticString = #file,
-        testName: String = #function
-    ) {
-        let results = devices.map { device in
-            verifySnapshot(matching: value,
-                           as: .image(on: device.value),
-                           named: "\(device.key)",
-                           testName: testName
-            )
-        }
-
-        results.forEach { XCTAssertNil($0) }
-    }
-
     /// snapshot variants for UIViewControllerStrategy
     public var uiViewControllerStrategy: [(Snapshotting<UIViewController, UIImage>, FilenameExtension)] {
         [

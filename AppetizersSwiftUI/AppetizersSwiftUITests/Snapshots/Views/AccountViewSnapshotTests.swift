@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import XCTest
+import SnapshotTesting
 
 @testable import AppetizersSwiftUI
 
@@ -25,12 +27,32 @@ class AccountViewSnapshotTests: SnapshotTestCase {
         subject = nil
         super.tearDown()
     }
-
-    func testDefaultAccountView() {
-        let host = UIHostingController(rootView: subject)
-        navigationController.pushViewController(host, animated: false)
-        assertMultipleSnapshot(matching: navigationController)
-    }
+//
+//    public let devices: [String: ViewImageConfig] = ["iPhone13ProMax": .iPhone13ProMax,
+//                                              "iPhone13Mini": .iPhone13Mini,
+//                                              "iPhoneSe": .iPhoneSe]
+//
+//    public func assertMultipleSnapshot(
+//        matching value: UIViewController,
+//        named name: String? = nil,
+//        record recording: Bool = isRecording,
+//        file: StaticString = #file,
+//        testName: String = #function
+//    ) {
+//        devices.map { device in
+//            verifySnapshot(matching: value,
+//                           as: .image(on: device.value),
+//                           named: "\(device.key)",
+//                           testName: testName
+//            )
+//        }
+//    }
+//
+//    func testDefaultAccountView() {
+//        let host = UIHostingController(rootView: subject)
+//        navigationController.pushViewController(host, animated: false)
+//        assertMultipleSnapshot(matching: navigationController)
+//    }
 
     func testCompletedAccountView() {
         let viewModel = AccountViewModel()

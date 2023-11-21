@@ -20,6 +20,7 @@
 		67498D402B0BFAA30078B17F /* AppetizerListViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67498D3F2B0BFAA30078B17F /* AppetizerListViewSnapshotTests.swift */; };
 		67498D432B0BFE240078B17F /* PreviewSnapshots in Frameworks */ = {isa = PBXBuildFile; productRef = 67498D422B0BFE240078B17F /* PreviewSnapshots */; };
 		67498D452B0BFE240078B17F /* PreviewSnapshotsTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 67498D442B0BFE240078B17F /* PreviewSnapshotsTesting */; };
+		67498D472B0D61650078B17F /* AppetizerDetailViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67498D462B0D61650078B17F /* AppetizerDetailViewSnapshotTests.swift */; };
 		67790B472B0A841D003DD9A9 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B462B0A841D003DD9A9 /* XDismissButton.swift */; };
 		67790B492B0A8450003DD9A9 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67790B482B0A8450003DD9A9 /* APButton.swift */; };
 		67790B4C2B0A8671003DD9A9 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 67790B4B2B0A8671003DD9A9 /* InlineSnapshotTesting */; };
@@ -85,6 +86,7 @@
 		67498D392B0BEC6D0078B17F /* AccountViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewSnapshotTests.swift; sourceTree = "<group>"; };
 		67498D3D2B0BF56F0078B17F /* APButtonSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButtonSnapshotTests.swift; sourceTree = "<group>"; };
 		67498D3F2B0BFAA30078B17F /* AppetizerListViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewSnapshotTests.swift; sourceTree = "<group>"; };
+		67498D462B0D61650078B17F /* AppetizerDetailViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailViewSnapshotTests.swift; sourceTree = "<group>"; };
 		67790B462B0A841D003DD9A9 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		67790B482B0A8450003DD9A9 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		67790B522B0A880C003DD9A9 /* NewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButton.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			children = (
 				67498D392B0BEC6D0078B17F /* AccountViewSnapshotTests.swift */,
 				67498D3F2B0BFAA30078B17F /* AppetizerListViewSnapshotTests.swift */,
+				67498D462B0D61650078B17F /* AppetizerDetailViewSnapshotTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,7 +405,6 @@
 				356FA81AA7DC03CF1C592AA5 /* Pods-AppetizersSwiftUITests.debug.xcconfig */,
 				769B581095CE59ABFB04FC51 /* Pods-AppetizersSwiftUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -652,6 +654,7 @@
 			files = (
 				6736154D28EB23C900C3D7FC /* AppetizersSwiftUITests.swift in Sources */,
 				67790B582B0B3F73003DD9A9 /* SnapshotTestCase.swift in Sources */,
+				67498D472B0D61650078B17F /* AppetizerDetailViewSnapshotTests.swift in Sources */,
 				67790B552B0A882C003DD9A9 /* NewButtonSnapshotTests.swift in Sources */,
 				67498D402B0BFAA30078B17F /* AppetizerListViewSnapshotTests.swift in Sources */,
 				67498D3A2B0BEC6D0078B17F /* AccountViewSnapshotTests.swift in Sources */,
