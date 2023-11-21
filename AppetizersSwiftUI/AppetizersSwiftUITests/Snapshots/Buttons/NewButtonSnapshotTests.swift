@@ -38,6 +38,7 @@ class NewButtonSnapshotTests: SnapshotTestCase {
 
     func testNewButtonLoadingState() {
         subject.setTitle("New Login", for: .normal)
+        subject.isLoading = true
         let result = verifySnapshot(matching: subject,
                                     as: .image,
                                     named: "Loading",
