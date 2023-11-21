@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Build
-      run: xcodebuild clean build -workspace AppetizersSwiftUI/AppetizersSwiftUI.xcworkspace -scheme AppetizersSwiftUI -destination 'platform=iOS Simulator, OS:16.2, name:iPhone 14'
+      run: xcodebuild clean build -workspace AppetizersSwiftUI/AppetizersSwiftUI.xcworkspace -scheme AppetizersSwiftUI -destination "platform=iOS Simulator,name=iPhone 14,OS=15.0"
       
     - name: Run tests
-      run: xcodebuild clean test -workspace AppetizersSwiftUI/AppetizersSwiftUI.xcworkspace -scheme AppetizersSwiftUI -destination 'platform=iOS Simulator, OS:16.2, name:iPhone 14'
+      run: xcodebuild clean test -workspace AppetizersSwiftUI/AppetizersSwiftUI.xcworkspace -scheme AppetizersSwiftUI -destination "platform=iOS Simulator,name=iPhone 14,OS=15.0"
