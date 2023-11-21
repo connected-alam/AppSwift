@@ -13,6 +13,9 @@ jobs:
   build:
 
     runs-on: macos-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=15.1,name=iPhone 15', 'platform=tvOS Simulator,OS=12.2,name=Apple TV 4K']
 
     steps:
     - uses: actions/checkout@v3
