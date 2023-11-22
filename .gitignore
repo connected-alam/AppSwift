@@ -95,3 +95,11 @@ iOSInjectionProject/
 .DS_Store
 .DS_Store?
 *.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+/CodeCoverage.json
+/CodeCoverage.xcresult
+.swiftpm/
+
