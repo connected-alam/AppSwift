@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import SnapshotTesting
+import XCTest
 
 @testable import AppetizersSwiftUI
 
@@ -37,6 +38,7 @@ class AppetizerDetailViewSnapshotTests: SnapshotTestCase {
             named: "sample",
             testName: "AppetizerDetailView"
         )
-//        assertMultipleSnapshot(matching: navigationController)
+
+        XCTAssertNil(result)
     }
 }

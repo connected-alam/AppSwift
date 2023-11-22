@@ -26,11 +26,12 @@ class NewButtonSnapshotTests: SnapshotTestCase {
 
     func testNewButtonDefaultState() {
         subject.setTitle("New Login", for: .normal)
-        let result = verifySnapshot(matching: subject,
+        let result = verifySnapshot(of: subject,
                                     as: .image,
-                                    named: "Default",
+                                    named: "DefaultState",
                                     record: false,
-                                    testName: "Button")
+                                    testName: "NewButton"
+        )
 
 
         XCTAssertNil(result)

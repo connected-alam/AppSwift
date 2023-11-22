@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import SnapshotTesting
+import XCTest
 
 @testable import AppetizersSwiftUI
 
@@ -30,6 +32,15 @@ class APButtonSnapshotTests: SnapshotTestCase {
     func testAPButtonDefaultState() {
         let host = UIHostingController(rootView: subject)
         navigationController.pushViewController(host, animated: false)
-        assertSnapshot(matching: navigationController, as: uiViewControllerStrategy)
+//        assertSnapshot(matching: navigationController, as: uiViewControllerStrategy)
+        let result = verifySnapshot(
+            of: navigationController,
+            as: .image,
+            named: "DefaultState",
+            record: false,
+            testName: "APButton"
+        )
+
+        XCTAssertNil(result)
     }
 }
